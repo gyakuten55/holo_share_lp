@@ -1,0 +1,480 @@
+.bannerSection {
+  background-color: #ffffff;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+.diagonalBand {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  transform: skewY(-4deg);
+  background-color: #00cc99;
+  padding: 30px 0;
+  margin-top: 40px;
+
+  .contentWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+  }
+
+  .imageArea {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%) skewY(4deg);
+    width: 400px;
+    height: 380px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    z-index: 2;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .textArea {
+    transform: skewY(4deg);
+    position: relative;
+    z-index: 3;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .textBox {
+      background-color: #ffffff;
+      border: 5px solid #00cc99;
+      color: #00cc99;
+      padding: 20px 50px;
+      display: block;
+      margin-bottom: 15px;
+
+      .mainText {
+        font-size: 42px;
+        font-weight: 900;
+        margin: 0;
+        line-height: 1.2;
+        white-space: normal;
+        word-wrap: break-word;
+      }
+    }
+
+    .subText {
+      font-size: 24px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0;
+      padding-left: 8px;
+    }
+  }
+}
+
+.techSection {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 20px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .techTitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+    margin: 0 0 60px 0;
+    line-height: 1.6;
+
+    .highlight {
+      color: #00cc99;
+      font-weight: 900;
+    }
+  }
+
+  .techList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .techItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .techContent {
+    flex: 1;
+    padding-right: 120px;
+  }
+
+  .techCard {
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .techBox {
+    background-color: #00cc99;
+    padding: 20px 40px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+  }
+
+  .techName {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .techDescription {
+    font-size: 20px;
+    font-weight: 600;
+    color: #666666;
+    margin: 0;
+    padding: 0 20px 5px 20px;
+  }
+
+  .iconCircle {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 204, 153, 0.2);
+    z-index: 10;
+  }
+}
+
+.useCaseSection {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 20px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .useCaseTitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+    margin: 0 0 60px 0;
+    line-height: 1.6;
+
+    .highlight {
+      color: #00cc99;
+      font-weight: 900;
+    }
+  }
+
+  .useCaseGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .useCaseCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .useCaseBox {
+    background-color: #00cc99;
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 100%;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .useCaseNeed {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .useCaseSolution {
+    font-size: 20px;
+    font-weight: 700;
+    color: #00cc99;
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+.proposalBar {
+  width: 100%;
+  background-color: #00cc99;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.colorStripe {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 15px;
+  background: linear-gradient(to right,
+    #ff3366 0%,
+    #ff3366 20%,
+    #00d9d9 20%,
+    #00d9d9 40%,
+    #ff9933 40%,
+    #ff9933 60%,
+    #00cc99 60%,
+    #00cc99 80%,
+    #0066ff 80%,
+    #0066ff 100%
+  );
+}
+
+/* Responsive styles */
+@media (max-width: 1199px) {
+  .bannerSection {
+    padding-top: 60px;
+  }
+
+  .diagonalBand {
+    margin-top: 30px;
+
+    .contentWrapper {
+      min-height: 220px;
+      padding: 0 16px;
+    }
+
+    .imageArea {
+      width: 300px;
+      height: 280px;
+    }
+
+    .textArea {
+      .textBox {
+        padding: 16px 36px;
+
+        .mainText {
+          font-size: 32px;
+        }
+      }
+
+      .subText {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .techSection {
+    padding: 60px 16px;
+
+    .techTitle {
+      font-size: 26px;
+      margin-bottom: 40px;
+    }
+
+    .techList {
+      gap: 24px;
+    }
+
+    .techContent {
+      padding-right: 100px;
+    }
+
+    .techBox {
+      padding: 16px 30px;
+    }
+
+    .techName {
+      font-size: 22px;
+    }
+
+    .techDescription {
+      font-size: 16px;
+      padding: 0 16px 4px 16px;
+    }
+
+    .iconCircle {
+      width: 160px;
+      height: 160px;
+      right: 20px;
+    }
+  }
+
+  .useCaseSection {
+    padding: 60px 16px;
+
+    .useCaseTitle {
+      font-size: 26px;
+      margin-bottom: 40px;
+    }
+
+    .useCaseGrid {
+      gap: 20px;
+    }
+
+    .useCaseBox {
+      padding: 30px 20px;
+      min-height: 150px;
+    }
+
+    .useCaseNeed {
+      font-size: 20px;
+    }
+
+    .useCaseSolution {
+      font-size: 16px;
+    }
+  }
+
+  .proposalBar {
+    font-size: 26px;
+    padding: 20px 16px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bannerSection {
+    padding-top: 40px;
+  }
+
+  .diagonalBand {
+    padding: 20px 0;
+    margin-top: 20px;
+
+    .contentWrapper {
+      min-height: 180px;
+      padding: 0 12px;
+      justify-content: center;
+    }
+
+    .imageArea {
+      display: none;
+    }
+
+    .textArea {
+      align-items: center;
+
+      .textBox {
+        padding: 12px 20px;
+        border: 3px solid #00cc99;
+
+        .mainText {
+          font-size: clamp(20px, 6vw, 26px);
+        }
+      }
+
+      .subText {
+        font-size: clamp(14px, 4vw, 16px);
+        text-align: center;
+      }
+    }
+  }
+
+  .techSection {
+    padding: 40px 12px;
+
+    .techTitle {
+      font-size: clamp(18px, 5vw, 22px);
+      margin-bottom: 30px;
+    }
+
+    .techList {
+      gap: 20px;
+    }
+
+    .techContent {
+      padding-right: 0;
+    }
+
+    .techBox {
+      padding: 12px 20px;
+      border-radius: 30px;
+    }
+
+    .techName {
+      font-size: clamp(16px, 5vw, 20px);
+    }
+
+    .techDescription {
+      font-size: clamp(13px, 3.5vw, 15px);
+      padding: 0 12px 4px 12px;
+    }
+
+    .iconCircle {
+      display: none;
+    }
+  }
+
+  .useCaseSection {
+    padding: 40px 12px;
+
+    .useCaseTitle {
+      font-size: clamp(18px, 5vw, 22px);
+      margin-bottom: 30px;
+    }
+
+    .useCaseGrid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .useCaseBox {
+      padding: 24px 16px;
+      min-height: 120px;
+    }
+
+    .useCaseNeed {
+      font-size: clamp(16px, 4.5vw, 18px);
+      line-height: 1.5;
+    }
+
+    .useCaseSolution {
+      font-size: clamp(14px, 4vw, 16px);
+      line-height: 1.5;
+    }
+  }
+
+  .proposalBar {
+    font-size: clamp(16px, 5vw, 20px);
+    padding: 16px 12px;
+    margin-bottom: 40px;
+  }
+
+  .colorStripe {
+    height: 10px;
+  }
+}

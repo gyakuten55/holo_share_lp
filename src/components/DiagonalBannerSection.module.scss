@@ -1,0 +1,276 @@
+.bannerSection {
+  background-color: #ffffff;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+.diagonalBand {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  transform: skewY(-4deg);
+  background-color: #00d9d9;
+  padding: 30px 0;
+  margin-top: 40px;
+  margin-bottom: 100px;
+
+  .contentWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .imageArea {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%) skewY(4deg);
+    width: 400px;
+    height: 380px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    z-index: 2;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .textArea {
+    transform: skewY(4deg);
+    position: relative;
+    z-index: 3;
+
+    .textBox {
+      background-color: #ffffff;
+      border: 5px solid #00d9d9;
+      color: #00d9d9;
+      padding: 28px 60px;
+      display: inline-block;
+      margin-bottom: 20px;
+
+      .mainText {
+        font-size: 56px;
+        font-weight: 900;
+        margin: 0;
+        line-height: 1.2;
+      }
+    }
+
+    .subText {
+      font-size: 24px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0;
+      padding-left: 8px;
+    }
+  }
+}
+
+.benefitsSection {
+  width: 100%;
+  background-color: #ffffff;
+  padding-bottom: 80px;
+
+  .benefitsBar {
+    width: 100%;
+    background-color: #00d9d9;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 60px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .benefitsList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .benefitItem {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .checkIcon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    background-color: #00d9d9;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .benefitText {
+    font-size: 22px;
+    font-weight: 700;
+    color: #00d9d9;
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1199px) {
+  .bannerSection {
+    padding-top: 60px;
+  }
+
+  .diagonalBand {
+    margin-top: 30px;
+    margin-bottom: 80px;
+
+    .contentWrapper {
+      min-height: 220px;
+      padding: 0 16px;
+    }
+
+    .imageArea {
+      width: 300px;
+      height: 280px;
+    }
+
+    .textArea {
+      .textBox {
+        padding: 20px 40px;
+
+        .mainText {
+          font-size: 40px;
+        }
+      }
+
+      .subText {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .benefitsSection {
+    padding-bottom: 60px;
+
+    .benefitsBar {
+      font-size: 22px;
+      padding: 16px;
+      margin-bottom: 40px;
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .benefitsList {
+      gap: 20px;
+    }
+
+    .benefitItem {
+      padding: 24px 30px;
+    }
+
+    .checkIcon {
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      font-size: 20px;
+    }
+
+    .benefitText {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .bannerSection {
+    padding-top: 40px;
+  }
+
+  .diagonalBand {
+    padding: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    .contentWrapper {
+      min-height: 180px;
+      padding: 0 12px;
+      justify-content: center;
+    }
+
+    .imageArea {
+      display: none;
+    }
+
+    .textArea {
+      .textBox {
+        padding: 12px 24px;
+        border: 3px solid #00d9d9;
+
+        .mainText {
+          font-size: clamp(24px, 7vw, 32px);
+        }
+      }
+
+      .subText {
+        font-size: clamp(14px, 4vw, 16px);
+      }
+    }
+  }
+
+  .benefitsSection {
+    padding-bottom: 40px;
+
+    .benefitsBar {
+      font-size: clamp(16px, 5vw, 20px);
+      padding: 12px;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      padding: 0 12px;
+    }
+
+    .benefitsList {
+      gap: 16px;
+    }
+
+    .benefitItem {
+      padding: 16px 20px;
+    }
+
+    .checkIcon {
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+      font-size: 18px;
+    }
+
+    .benefitText {
+      font-size: clamp(14px, 4vw, 16px);
+      line-height: 1.5;
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.ctaSection {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #2a2a2a;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  padding: 80px 20px 0;
+
+
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto 80px;
+
+
+  }
+
+  .messageBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+
+
+  }
+
+  .arrow {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ff3366;
+
+
+  }
+
+  .message {
+    font-size: 36px;
+    font-weight: 900;
+    color: #ff3366;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+
+
+
+  }
+
+  .ctaButton {
+    background-color: #ff3366;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px 40px;
+    border-radius: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+
+
+
+  }
+}
+
+.colorStripe {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 15px;
+  background: linear-gradient(to right,
+    #ff3366 0%,
+    #ff3366 20%,
+    #00d9d9 20%,
+    #00d9d9 40%,
+    #ff9933 40%,
+    #ff9933 60%,
+    #00cc99 60%,
+    #00cc99 80%,
+    #0066ff 80%,
+    #0066ff 100%
+  );
+}
+
+/* Responsive styles */
+@media (max-width: 1199px) {
+  .ctaSection {
+    padding: 60px 16px 0;
+
+    .container {
+      margin-bottom: 60px;
+    }
+
+    .messageBox {
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .arrow {
+      font-size: 28px;
+    }
+
+    .message {
+      font-size: 28px;
+    }
+
+    .ctaButton {
+      font-size: 26px;
+      padding: 24px 32px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ctaSection {
+    padding: 40px 12px 0;
+
+    .container {
+      margin-bottom: 40px;
+    }
+
+    .messageBox {
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .arrow {
+      font-size: 24px;
+    }
+
+    .message {
+      font-size: clamp(18px, 5.5vw, 24px);
+      white-space: normal;
+    }
+
+    .ctaButton {
+      font-size: clamp(18px, 5vw, 22px);
+      padding: 18px 24px;
+    }
+  }
+
+  .colorStripe {
+    height: 10px;
+  }
+}

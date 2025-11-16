@@ -1,0 +1,70 @@
+.catchCopySection {
+  background-color: #0a0a0a;
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 80px,
+    rgba(255, 255, 255, 0.05) 80px,
+    rgba(255, 255, 255, 0.05) 83px
+  );
+  padding: 80px 20px;
+  width: 100%;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .catchCopy {
+    font-size: 56px;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.7;
+    margin: 0;
+    letter-spacing: 0.02em;
+
+    .cyan {
+      color: #00d9d9;
+    }
+
+    .orange {
+      color: #ff9933;
+    }
+
+    .pink {
+      color: #ff3366;
+    }
+
+    .large {
+      font-size: 1.15em;
+    }
+
+    .small {
+      font-size: 0.82em;
+    }
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1199px) {
+  .catchCopySection {
+    padding: 60px 16px;
+
+    .catchCopy {
+      font-size: clamp(36px, 5vw, 48px);
+      line-height: 1.6;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .catchCopySection {
+    padding: 40px 12px;
+
+    .catchCopy {
+      font-size: clamp(24px, 6vw, 36px);
+      line-height: 1.5;
+    }
+  }
+}

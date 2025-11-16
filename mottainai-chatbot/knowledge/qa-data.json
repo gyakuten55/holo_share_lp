@@ -1,0 +1,360 @@
+{
+  "welcome": {
+    "id": "welcome",
+    "type": "message",
+    "text": "HoloShareアシスタントへようこそ！\n\n営業を「体験」に変えるVR/XRソリューションについて、お気軽にご質問ください。",
+    "options": [
+      { "id": "main_menu", "label": "詳しく知りたい" }
+    ]
+  },
+  "main_menu": {
+    "id": "main_menu",
+    "type": "message",
+    "text": "どのような情報をお探しですか？",
+    "options": [
+      { "id": "about_service", "label": "HoloShareとは？" },
+      { "id": "features", "label": "できること" },
+      { "id": "strengths", "label": "導入メリット・コスト削減" },
+      { "id": "case_studies", "label": "活用事例" },
+      { "id": "faq", "label": "よくある質問" },
+      { "id": "contact", "label": "お問い合わせ" }
+    ]
+  },
+  "about_service": {
+    "id": "about_service",
+    "type": "message",
+    "text": "**HoloShare（ホロシェア）**は、VR/XR技術を活用して営業活動を革新するソリューションです。\n\n💡 **コンセプト**\n「営業を『体験』に変える！」\n\n営業先でも、展示会ブースでも、目の前に実物大の製品が出現。重い製品サンプルの持ち運びや、高額な展示ブース設営が不要になります。",
+    "options": [
+      { "id": "features", "label": "具体的に何ができる？" },
+      { "id": "strengths", "label": "コスト削減効果は？" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "features": {
+    "id": "features",
+    "type": "message",
+    "text": "HoloShareでできることは主に4つあります：",
+    "options": [
+      { "id": "feature_1", "label": "1️⃣ 実物大の製品表示" },
+      { "id": "feature_2", "label": "2️⃣ リアルタイムカスタマイズ" },
+      { "id": "feature_3", "label": "3️⃣ 展示会での体験提供" },
+      { "id": "feature_4", "label": "4️⃣ 遠隔地へのデモ" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "feature_1": {
+    "id": "feature_1",
+    "type": "message",
+    "text": "**1️⃣ 「本物の製品」を瞬時に表示**\n\n目の前に実物大の製品をVR/XRで表示することで、お客様に「これが欲しい！」という衝動を引き起こします。\n\n✅ 重い製品サンプルの持ち運び不要\n✅ 大型機械も目の前に出現\n✅ 複数製品を1台のVRヘッドセットで展示",
+    "options": [
+      { "id": "feature_2", "label": "次：リアルタイムカスタマイズ" },
+      { "id": "features", "label": "機能一覧に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "feature_2": {
+    "id": "feature_2",
+    "type": "message",
+    "text": "**2️⃣ リアルタイムカスタマイズ提案**\n\nその場で色やサイズを変更できるため、お客様のニーズに即座に対応できます。\n\n✅ 色・サイズをリアルタイムで変更\n✅ 複数パターンを即座に比較\n✅ お客様の「もし」に瞬時に応える",
+    "options": [
+      { "id": "feature_3", "label": "次：展示会での体験提供" },
+      { "id": "features", "label": "機能一覧に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "feature_3": {
+    "id": "feature_3",
+    "type": "message",
+    "text": "**3️⃣ 「忘れられない体験」を展示会で**\n\n展示会で来場者に強烈なインパクトを与え、競合との差別化を実現します。\n\n✅ VR体験で記憶に残る\n✅ 口コミ・SNS拡散効果\n✅ ブース設営コストを大幅削減",
+    "options": [
+      { "id": "feature_4", "label": "次：遠隔地へのデモ" },
+      { "id": "features", "label": "機能一覧に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "feature_4": {
+    "id": "feature_4",
+    "type": "message",
+    "text": "**4️⃣ 遠隔地の顧客にも移動なしでデモ**\n\n全国・海外の顧客に、移動コストゼロでデモを実施できます。\n\n✅ 出張費ゼロ\n✅ 製品輸送コストゼロ\n✅ オンライン商談で製品体験が可能",
+    "options": [
+      { "id": "strengths", "label": "コスト削減効果を見る" },
+      { "id": "features", "label": "機能一覧に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "strengths": {
+    "id": "strengths",
+    "type": "message",
+    "text": "**💰 営業業務のコストを劇的に削減**\n\nHoloShareは一度の導入で何度でも使い回せるため、長期的に大幅なコスト削減を実現します。",
+    "options": [
+      { "id": "cost_exhibition", "label": "📊 展示会ブースの削減効果" },
+      { "id": "cost_shipping", "label": "📦 サンプル輸送の削減効果" },
+      { "id": "cost_transport", "label": "🚛 実物輸送の削減効果" },
+      { "id": "cost_travel", "label": "✈️ 出張費の削減効果" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "cost_exhibition": {
+    "id": "cost_exhibition",
+    "type": "message",
+    "text": "**📊 展示会ブース設営コスト**\n\n従来：300万円/回\n↓\nHoloShare導入後：50万円/回\n\n💰 **-83%削減（-250万円/回）**\n\n✅ 大型製品の搬入・設営不要\n✅ VRヘッドセット1台で全製品展示\n✅ ブースサイズを縮小可能",
+    "options": [
+      { "id": "cost_shipping", "label": "次：サンプル輸送の削減効果" },
+      { "id": "strengths", "label": "削減効果一覧に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "cost_shipping": {
+    "id": "cost_shipping",
+    "type": "message",
+    "text": "**📦 サンプル輸送コスト**\n\n従来：50万円/台\n↓\nHoloShare導入後：10-30万円/台\n\n💰 **-40～80%削減**\n\n✅ 重量物の輸送不要\n✅ 梱包・保険コスト削減\n✅ 破損リスクゼロ",
+    "options": [
+      { "id": "cost_transport", "label": "次：実物輸送の削減効果" },
+      { "id": "strengths", "label": "削減効果一覧に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "cost_transport": {
+    "id": "cost_transport",
+    "type": "message",
+    "text": "**🚛 実物輸送コスト**\n\n従来：50万円/回\n↓\nHoloShare導入後：0円\n\n💰 **-100%削減（-50万円/回）**\n\n✅ 大型機械の輸送不要\n✅ クレーン・特殊車両不要\n✅ 輸送期間ゼロ",
+    "options": [
+      { "id": "cost_travel", "label": "次：出張費の削減効果" },
+      { "id": "strengths", "label": "削減効果一覧に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "cost_travel": {
+    "id": "cost_travel",
+    "type": "message",
+    "text": "**✈️ 出張費**\n\n従来：5万円/回\n↓\nHoloShare導入後：0円\n\n💰 **-100%削減（-5万円/回）**\n\n✅ 遠隔地へもオンラインでデモ\n✅ 移動時間ゼロ\n✅ 営業効率が大幅向上",
+    "options": [
+      { "id": "case_studies", "label": "活用事例を見る" },
+      { "id": "strengths", "label": "削減効果一覧に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "case_studies": {
+    "id": "case_studies",
+    "type": "message",
+    "text": "HoloShareは様々な業界で活用されています。\n\nどちらの業界の事例をご覧になりますか？",
+    "options": [
+      { "id": "case_manufacturing", "label": "🏭 製造業・機械業界" },
+      { "id": "case_construction", "label": "🏗️ 建設・住宅業界" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "case_manufacturing": {
+    "id": "case_manufacturing",
+    "type": "message",
+    "text": "**🏭 製造業・機械業界での活用**",
+    "options": [
+      { "id": "case_mfg_exhibition", "label": "展示会での活用事例" },
+      { "id": "case_mfg_sales", "label": "営業活動での活用事例" },
+      { "id": "case_studies", "label": "業界選択に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "case_mfg_exhibition": {
+    "id": "case_mfg_exhibition",
+    "type": "message",
+    "text": "**展示会での活用事例（製造業・機械）**\n\n✅ **大型設備のVR展示**\n持ち込み不可能な大型機械をVRで再現し、来場者に圧倒的なインパクトを与えます。\n\n✅ **全製品ラインナップを1台のVRヘッドセットで**\n数十種類の製品を、VRヘッドセット1台で全て展示できます。\n\n✅ **機械の動作をアニメーションで説明**\n内部構造や動作原理を、分解アニメーションで分かりやすく解説できます。",
+    "options": [
+      { "id": "case_mfg_sales", "label": "営業活動での活用事例を見る" },
+      { "id": "case_manufacturing", "label": "製造業事例に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "case_mfg_sales": {
+    "id": "case_mfg_sales",
+    "type": "message",
+    "text": "**営業活動での活用事例（製造業・機械）**\n\n✅ **工場内でのレイアウト確認**\nお客様の工場で、機械を配置した際のレイアウトをVRで事前確認できます。\n\n✅ **VR分解説明**\n機械の内部構造を、VRで分解しながら説明できます。\n\n✅ **お客様自身が操作体験**\nVR空間でお客様が実際に機械を操作し、使用感を確認できます。\n\n✅ **リアルタイムカスタマイズ**\nオプション機能を、その場で追加・変更して提案できます。",
+    "options": [
+      { "id": "case_construction", "label": "建設・住宅業界の事例を見る" },
+      { "id": "case_manufacturing", "label": "製造業事例に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "case_construction": {
+    "id": "case_construction",
+    "type": "message",
+    "text": "**🏗️ 建設・住宅業界での活用**",
+    "options": [
+      { "id": "case_const_exhibition", "label": "展示会での活用事例" },
+      { "id": "case_const_sales", "label": "営業活動での活用事例" },
+      { "id": "case_studies", "label": "業界選択に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "case_const_exhibition": {
+    "id": "case_const_exhibition",
+    "type": "message",
+    "text": "**展示会での活用事例（建設・住宅）**\n\n✅ **施工事例のVR再現**\n過去の建設プロジェクトを、VRで臨場感たっぷりに再現できます。\n\n✅ **構造の見える化**\n建物の内部構造や配管・配線を、透視図でビジュアル化できます。\n\n✅ **バーチャルショールーム**\n複数の住宅モデルを、VR空間で自由に見学できるショールームを構築できます。",
+    "options": [
+      { "id": "case_const_sales", "label": "営業活動での活用事例を見る" },
+      { "id": "case_construction", "label": "建設・住宅事例に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "case_const_sales": {
+    "id": "case_const_sales",
+    "type": "message",
+    "text": "**営業活動での活用事例（建設・住宅）**\n\n✅ **着工前のVR体験**\n建設前に、完成後の建物をVRで体験できます。お客様の不安を解消し、契約率が向上します。\n\n✅ **3D施工計画**\n施工手順を3Dアニメーションで説明し、お客様の理解を深めます。\n\n✅ **設計変更の比較**\n間取り変更や外観デザイン変更を、複数パターン並べて比較できます。\n\n✅ **内装の瞬時カスタマイズ**\n壁紙、床材、照明などを、その場で変更してシミュレーションできます。",
+    "options": [
+      { "id": "faq", "label": "よくある質問を見る" },
+      { "id": "case_construction", "label": "建設・住宅事例に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "faq": {
+    "id": "faq",
+    "type": "message",
+    "text": "**よくある質問**\n\nどの質問をご覧になりますか？",
+    "options": [
+      { "id": "faq_1", "label": "既存のCADデータは使える？" },
+      { "id": "faq_2", "label": "営業担当でも操作できる？" },
+      { "id": "faq_3", "label": "展示会以外でも使える？" },
+      { "id": "faq_4", "label": "競合と差別化できる？" },
+      { "id": "faq_5", "label": "遠隔商談でも使える？" },
+      { "id": "faq_6", "label": "どんな業界で使われてる？" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "faq_1": {
+    "id": "faq_1",
+    "type": "message",
+    "text": "**Q: 既存のCADデータは使えますか？**\n\nA: はい、以下の形式に対応しています。\n\n✅ **対応形式**\n- STEP\n- IGES\n- STL\n- OBJ\n- FBX\n- BIM（建設業向け）\n\nお持ちのCADデータをそのまま活用できるため、データ変換の手間が最小限で済みます。",
+    "options": [
+      { "id": "faq_2", "label": "次：営業担当でも操作できる？" },
+      { "id": "faq", "label": "FAQ一覧に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "faq_2": {
+    "id": "faq_2",
+    "type": "message",
+    "text": "**Q: 営業担当でも操作できますか？**\n\nA: はい、直感的に操作できます。\n\n✅ **簡単操作**\n- 専門知識不要\n- タブレット感覚で操作可能\n- 数時間の研修で習得できます\n\n営業担当者がお客様の目の前で、スムーズにデモを実施できます。",
+    "options": [
+      { "id": "faq_3", "label": "次：展示会以外でも使える？" },
+      { "id": "faq", "label": "FAQ一覧に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "faq_3": {
+    "id": "faq_3",
+    "type": "message",
+    "text": "**Q: 展示会以外でも使えますか？**\n\nA: はい、様々なシーンで活用できます。\n\n✅ **活用シーン**\n- 営業活動（顧客訪問時）\n- 遠隔商談（オンライン会議）\n- 社内研修（製品トレーニング）\n- ショールーム（常設展示）\n\n一度の投資で、あらゆる営業シーンに対応できます。",
+    "options": [
+      { "id": "faq_4", "label": "次：競合と差別化できる？" },
+      { "id": "faq", "label": "FAQ一覧に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "faq_4": {
+    "id": "faq_4",
+    "type": "message",
+    "text": "**Q: 展示会で競合と差別化できますか？**\n\nA: はい、圧倒的に差別化できます。\n\n✅ **差別化ポイント**\n- VR体験は記憶に残りやすい\n- SNS・口コミで拡散されやすい\n- 「最新技術を使う企業」として印象付けられる\n- ブースに人だかりができる\n\n来場者に「忘れられない体験」を提供し、競合ブースとは一線を画します。",
+    "options": [
+      { "id": "faq_5", "label": "次：遠隔商談でも使える？" },
+      { "id": "faq", "label": "FAQ一覧に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "faq_5": {
+    "id": "faq_5",
+    "type": "message",
+    "text": "**Q: 遠隔商談でも使えますか？**\n\nA: はい、全国・海外の顧客にも対応できます。\n\n✅ **遠隔商談のメリット**\n- 出張費ゼロ\n- 移動時間ゼロ\n- オンライン会議で製品デモが可能\n- 顧客の現場でVR体験を提供\n\n距離の制約を超えて、営業活動の範囲を大きく広げられます。",
+    "options": [
+      { "id": "faq_6", "label": "次：どんな業界で使われてる？" },
+      { "id": "faq", "label": "FAQ一覧に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "faq_6": {
+    "id": "faq_6",
+    "type": "message",
+    "text": "**Q: どんな業界で使われていますか？**\n\nA: 主に以下の業界で導入が進んでいます。\n\n✅ **製造業・機械業界**\n- 工作機械メーカー\n- 産業機械メーカー\n- 自動車部品メーカー\n\n✅ **建設・住宅業界**\n- ゼネコン\n- ハウスメーカー\n- 設計事務所\n\nその他、医療機器、航空宇宙、エネルギーなど、高額・大型製品を扱う業界で導入実績があります。",
+    "options": [
+      { "id": "flow", "label": "導入の流れを見る" },
+      { "id": "faq", "label": "FAQ一覧に戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "flow": {
+    "id": "flow",
+    "type": "message",
+    "text": "**🚀 導入の流れ（3ステップ）**\n\nHoloShareの導入は、シンプルな3ステップで完了します。",
+    "options": [
+      { "id": "flow_step1", "label": "STEP 1: ヒアリング" },
+      { "id": "flow_step2", "label": "STEP 2: ご提案" },
+      { "id": "flow_step3", "label": "STEP 3: お見積もり" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "flow_step1": {
+    "id": "flow_step1",
+    "type": "message",
+    "text": "**STEP 1: ヒアリング**\n\nお客様の課題やニーズを丁寧にヒアリングします。\n\n📋 **確認内容**\n- 現在の営業活動の課題\n- 展示会・商談の頻度\n- 扱っている製品の種類\n- 既存のCADデータの有無\n- 導入目的（展示会/営業/研修など）",
+    "options": [
+      { "id": "flow_step2", "label": "次：STEP 2 ご提案" },
+      { "id": "flow", "label": "導入の流れに戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "flow_step2": {
+    "id": "flow_step2",
+    "type": "message",
+    "text": "**STEP 2: ご提案**\n\nヒアリング内容を基に、具体的な実装案をご提案します。\n\n📝 **提案内容**\n- VR/XR活用シナリオ\n- 必要な機材・システム構成\n- デモ映像（既存事例）\n- 想定される効果・ROI\n- 導入スケジュール",
+    "options": [
+      { "id": "flow_step3", "label": "次：STEP 3 お見積もり" },
+      { "id": "flow", "label": "導入の流れに戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "flow_step3": {
+    "id": "flow_step3",
+    "type": "message",
+    "text": "**STEP 3: お見積もり**\n\nご提案内容に基づいて、詳細なお見積もりを作成します。\n\n💰 **見積もり項目**\n- システム開発費\n- VR機材費\n- CADデータ変換費\n- 研修・サポート費\n- 保守・運用費\n\nお見積もり後、ご納得いただけましたら契約・開発に進みます。",
+    "options": [
+      { "id": "contact", "label": "まずは相談してみる" },
+      { "id": "flow", "label": "導入の流れに戻る" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "contact": {
+    "id": "contact",
+    "type": "message",
+    "text": "**📞 お問い合わせ**\n\nHoloShareに関するご質問・ご相談は、お気軽にお問い合わせください。\n\n✅ **お問い合わせ方法**\n1. 公式サイトのお問い合わせフォーム\n2. LINE公式アカウント\n3. X (Twitter) DM\n\nまずは無料相談で、貴社の課題解決方法をご提案いたします。",
+    "options": [
+      { "id": "contact_form", "label": "お問い合わせフォームへ" },
+      { "id": "contact_line", "label": "LINEで相談する" },
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  },
+  "contact_form": {
+    "id": "contact_form",
+    "type": "message",
+    "text": "お問い合わせフォームは、このページの下部「お問い合わせ」セクションにございます。\n\n📝 **入力項目**\n- お名前\n- 会社名\n- メールアドレス\n- 電話番号\n- お問い合わせ内容\n\nご記入後、送信ボタンを押してください。担当者より1営業日以内にご返信いたします。",
+    "options": [
+      { "id": "main_menu", "label": "メニューに戻る" },
+      { "id": "reset", "label": "最初に戻る" }
+    ]
+  },
+  "contact_line": {
+    "id": "contact_line",
+    "type": "message",
+    "text": "LINE公式アカウントからもお問い合わせいただけます。\n\n📱 **LINEでのご相談**\n- 気軽に質問できる\n- 画像・資料の送受信が簡単\n- レスポンスが早い\n\nページ下部のLINEアイコンをクリックして、友だち追加してください。",
+    "options": [
+      { "id": "main_menu", "label": "メニューに戻る" },
+      { "id": "reset", "label": "最初に戻る" }
+    ]
+  },
+  "reset": {
+    "id": "reset",
+    "type": "message",
+    "text": "ご利用ありがとうございました！\n\n他にもご質問がございましたら、お気軽にお声がけください。",
+    "options": [
+      { "id": "main_menu", "label": "メニューに戻る" }
+    ]
+  }
+}

@@ -1,0 +1,259 @@
+.flowSection {
+  background-color: #ffffff;
+  padding: 100px 20px 80px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+
+
+  .backgroundText {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 120px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.03);
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0;
+
+
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #333333;
+    margin: 0 0 16px 0;
+    letter-spacing: 0.02em;
+
+
+
+    .highlight {
+      color: #ff3366;
+    }
+  }
+
+  .subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    margin: 0 0 8px 0;
+
+
+  }
+
+  .stepsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+
+
+
+  }
+
+  .stepCard {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+
+  }
+
+  .stepHeader {
+    padding: 15px 30px;
+    text-align: left;
+
+  }
+
+  .stepNumber {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+
+  }
+
+  .cyan {
+    background-color: #00d9d9;
+  }
+
+  .orange {
+    background-color: #ff9933;
+  }
+
+  .stepContent {
+    padding: 30px;
+    text-align: left;
+
+  }
+
+  .stepTitle {
+    font-size: 32px;
+    font-weight: 900;
+    color: #333333;
+    margin: 0 0 15px 0;
+
+  }
+
+  .stepDescription {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    margin: 0 0 20px 0;
+    line-height: 1.6;
+
+  }
+
+  .stepImage {
+    width: 100%;
+    height: 250px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+
+
+  }
+
+  .arrow {
+    font-size: 80px;
+    font-weight: 900;
+    color: #00cc99;
+    line-height: 1;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1199px) {
+  .flowSection {
+    padding: 80px 16px 60px;
+
+    .backgroundText {
+      font-size: 80px;
+      top: 30px;
+    }
+
+    .title {
+      font-size: clamp(32px, 5vw, 40px);
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+    }
+
+    .stepsContainer {
+      gap: 24px;
+      margin-top: 50px;
+    }
+
+    .stepCard {
+      max-width: 320px;
+    }
+
+    .stepHeader {
+      padding: 12px 24px;
+    }
+
+    .stepNumber {
+      font-size: 20px;
+    }
+
+    .stepContent {
+      padding: 24px;
+    }
+
+    .stepTitle {
+      font-size: 26px;
+      margin-bottom: 12px;
+    }
+
+    .stepDescription {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    .stepImage {
+      height: 200px;
+    }
+
+    .arrow {
+      font-size: 60px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .flowSection {
+    padding: 50px 12px 40px;
+
+    .backgroundText {
+      font-size: 50px;
+      top: 20px;
+    }
+
+    .title {
+      font-size: clamp(24px, 6vw, 32px);
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+    }
+
+    .stepsContainer {
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .stepCard {
+      max-width: none;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .stepHeader {
+      padding: 8px 12px;
+    }
+
+    .stepNumber {
+      font-size: clamp(12px, 3.5vw, 14px);
+    }
+
+    .stepContent {
+      padding: 12px 8px;
+    }
+
+    .stepTitle {
+      font-size: clamp(14px, 4vw, 18px);
+      margin-bottom: 8px;
+    }
+
+    .stepDescription {
+      font-size: clamp(10px, 3vw, 12px);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .stepImage {
+      height: clamp(80px, 20vw, 120px);
+      border-radius: 8px;
+    }
+
+    .arrow {
+      font-size: clamp(24px, 6vw, 36px);
+    }
+  }
+}

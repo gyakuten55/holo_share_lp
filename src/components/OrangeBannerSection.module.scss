@@ -1,0 +1,324 @@
+.bannerSection {
+  background-color: #ffffff;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+.diagonalBand {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  transform: skewY(4deg);
+  background-color: #ff9933;
+  padding: 30px 0;
+  margin-top: 40px;
+
+  .contentWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+  }
+
+  .textArea {
+    transform: skewY(-4deg);
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .textBox {
+      background-color: #ffffff;
+      border: 5px solid #ff9933;
+      color: #ff9933;
+      padding: 20px 50px;
+      display: block;
+      margin-bottom: 15px;
+
+      .mainText {
+        font-size: 42px;
+        font-weight: 900;
+        margin: 0;
+        line-height: 1.2;
+        white-space: normal;
+        word-wrap: break-word;
+      }
+    }
+
+    .subText {
+      font-size: 24px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0;
+      padding-left: 8px;
+    }
+  }
+
+  .imageArea {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%) skewY(-4deg);
+    width: 400px;
+    height: 380px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    z-index: 2;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.dataSection {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 20px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .dataTitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+    margin: 0 0 60px 0;
+    line-height: 1.6;
+
+    .highlight {
+      color: #ff9933;
+      font-weight: 900;
+    }
+  }
+
+  .dataCircles {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  .circleItem {
+    flex: 0 0 auto;
+  }
+
+  .circle {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: #ff9933;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(255, 153, 51, 0.3);
+  }
+
+  .circleText {
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .circleTitle {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+
+  .circleSubtitle {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .dataFooter {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff9933;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.benefitsBar {
+  width: 100%;
+  background-color: #ff9933;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Responsive styles */
+@media (max-width: 1199px) {
+  .bannerSection {
+    padding-top: 60px;
+  }
+
+  .diagonalBand {
+    margin-top: 30px;
+
+    .contentWrapper {
+      min-height: 220px;
+      padding: 0 16px;
+    }
+
+    .textArea {
+      .textBox {
+        padding: 16px 36px;
+
+        .mainText {
+          font-size: 32px;
+        }
+      }
+
+      .subText {
+        font-size: 18px;
+      }
+    }
+
+    .imageArea {
+      width: 300px;
+      height: 280px;
+    }
+  }
+
+  .dataSection {
+    padding: 60px 16px;
+
+    .dataTitle {
+      font-size: 26px;
+      margin-bottom: 40px;
+    }
+
+    .dataCircles {
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .circle {
+      width: 220px;
+      height: 220px;
+    }
+
+    .circleTitle {
+      font-size: 26px;
+    }
+
+    .circleSubtitle {
+      font-size: 16px;
+    }
+
+    .dataFooter {
+      font-size: 22px;
+    }
+  }
+
+  .benefitsBar {
+    font-size: 26px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bannerSection {
+    padding-top: 40px;
+  }
+
+  .diagonalBand {
+    padding: 20px 0;
+    margin-top: 20px;
+
+    .contentWrapper {
+      min-height: 180px;
+      padding: 0 12px;
+      justify-content: center;
+    }
+
+    .textArea {
+      align-items: center;
+
+      .textBox {
+        padding: 12px 20px;
+        border: 3px solid #ff9933;
+
+        .mainText {
+          font-size: clamp(20px, 6vw, 26px);
+        }
+      }
+
+      .subText {
+        font-size: clamp(14px, 4vw, 16px);
+        text-align: center;
+      }
+    }
+
+    .imageArea {
+      display: none;
+    }
+  }
+
+  .dataSection {
+    padding: 40px 12px;
+
+    .dataTitle {
+      font-size: clamp(18px, 5vw, 22px);
+      margin-bottom: 30px;
+    }
+
+    .dataCircles {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .circleItem {
+      flex: 0 0 calc(50% - 8px);
+      max-width: calc(50% - 8px);
+
+      &:last-child {
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .circle {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      aspect-ratio: 1;
+      margin: 0 auto;
+    }
+
+    .circleTitle {
+      font-size: clamp(18px, 5vw, 22px);
+      margin-bottom: 8px;
+    }
+
+    .circleSubtitle {
+      font-size: clamp(12px, 3.5vw, 14px);
+    }
+
+    .dataFooter {
+      font-size: clamp(16px, 4.5vw, 20px);
+    }
+  }
+
+  .benefitsBar {
+    font-size: clamp(16px, 5vw, 20px);
+    padding: 12px;
+  }
+}

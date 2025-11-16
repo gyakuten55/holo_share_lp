@@ -1,0 +1,47 @@
+.finalCtaSection {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: linear-gradient(to right, #0066ff 0%, #00cc99 100%);
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+
+
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .message {
+    font-size: 56px;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 0.05em;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1199px) {
+  .finalCtaSection {
+    padding: 80px 16px;
+
+    .message {
+      font-size: clamp(36px, 6vw, 48px);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .finalCtaSection {
+    padding: 60px 12px;
+
+    .message {
+      font-size: clamp(24px, 7vw, 36px);
+      letter-spacing: 0.03em;
+    }
+  }
+}

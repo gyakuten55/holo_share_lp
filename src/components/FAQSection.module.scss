@@ -1,0 +1,292 @@
+.faqSection {
+  background-color: #ffffff;
+  padding: 100px 20px 80px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+
+
+  .backgroundText {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 180px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.03);
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0;
+
+
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #333333;
+    margin: 0 0 16px 0;
+    letter-spacing: 0.02em;
+
+
+
+    .highlight {
+      color: #0066ff;
+    }
+  }
+
+  .subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    margin: 0 0 60px 0;
+
+
+  }
+
+  .faqList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  }
+
+  .faqItem {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .faqQuestion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #eeeeee;
+    }
+
+  }
+
+  .questionContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+
+  }
+
+  .qIcon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    background-color: #0066ff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 900;
+
+
+  }
+
+  .questionText {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+
+
+  }
+
+  .toggleIcon {
+    font-size: 24px;
+    color: #333333;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+
+  }
+
+  .faqAnswerWrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    opacity: 0;
+
+    &.open {
+      max-height: 1000px;
+      opacity: 1;
+      transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease 0.1s;
+    }
+  }
+
+  .faqAnswer {
+    padding: 0 30px 30px 110px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    text-align: left;
+    line-height: 1.8;
+
+
+  }
+
+  .faqItem .faqQuestion .toggleIcon {
+    transform: rotate(0deg);
+  }
+
+  .faqItem:has(.faqAnswerWrapper.open) .faqQuestion .toggleIcon {
+    transform: rotate(180deg);
+  }
+}
+
+.colorStripe {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 15px;
+  background: linear-gradient(to right,
+    #ff3366 0%,
+    #ff3366 20%,
+    #00d9d9 20%,
+    #00d9d9 40%,
+    #ff9933 40%,
+    #ff9933 60%,
+    #00cc99 60%,
+    #00cc99 80%,
+    #0066ff 80%,
+    #0066ff 100%
+  );
+}
+
+/* Responsive styles */
+@media (max-width: 1199px) {
+  .faqSection {
+    padding: 80px 16px 60px;
+
+    .backgroundText {
+      font-size: 120px;
+      top: 30px;
+    }
+
+    .container {
+      max-width: 800px;
+    }
+
+    .title {
+      font-size: clamp(32px, 5vw, 40px);
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      margin-bottom: 50px;
+    }
+
+    .faqList {
+      gap: 16px;
+    }
+
+    .faqQuestion {
+      padding: 20px 24px;
+    }
+
+    .questionContent {
+      gap: 16px;
+    }
+
+    .qIcon {
+      width: 50px;
+      height: 50px;
+      min-width: 50px;
+      font-size: 28px;
+    }
+
+    .questionText {
+      font-size: 20px;
+    }
+
+    .toggleIcon {
+      font-size: 20px;
+      margin-left: 16px;
+    }
+
+    .faqAnswer {
+      padding: 0 24px 24px 90px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .faqSection {
+    padding: 50px 12px 40px;
+
+    .backgroundText {
+      font-size: 80px;
+      top: 20px;
+    }
+
+    .title {
+      font-size: clamp(24px, 6vw, 32px);
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .faqList {
+      gap: 12px;
+    }
+
+    .faqQuestion {
+      padding: 16px 12px;
+    }
+
+    .questionContent {
+      gap: 12px;
+    }
+
+    .qIcon {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      font-size: 24px;
+    }
+
+    .questionText {
+      font-size: clamp(14px, 4.5vw, 16px);
+    }
+
+    .toggleIcon {
+      font-size: 18px;
+      margin-left: 8px;
+    }
+
+    .faqAnswer {
+      padding: 0 12px 16px 64px;
+      font-size: clamp(12px, 3.5vw, 14px);
+      line-height: 1.6;
+    }
+  }
+
+  .colorStripe {
+    height: 10px;
+  }
+}

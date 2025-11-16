@@ -1,141 +1,184 @@
-.page {
-  --background: #fafafa;
-  --foreground: #fff;
-
-  --text-primary: #000;
-  --text-secondary: #666;
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
-
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
-}
-
 .main {
-  display: flex;
   min-height: 100vh;
-  width: 100%;
-  max-width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
-}
-
-.intro {
+  margin-top: -80px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
-}
-
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
-}
-
-.intro p {
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
-}
-
-.intro a {
-  font-weight: 500;
-  color: var(--text-primary);
-}
-
-.ctas {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
-  gap: 16px;
-  font-size: 14px;
-}
-
-.ctas a {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
-  cursor: pointer;
-  width: fit-content;
-  font-weight: 500;
+  justify-content: center;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url('/key_visual.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
+.hero {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  font-size: 24px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.freeConsultButton {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 16px 16px 0 0;
+  padding: 20px 30px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.freeConsultButton:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 217, 217, 0.4);
+}
+
+.buttonContent {
+  display: flex;
+  flex-direction: column;
   gap: 8px;
 }
 
-a.secondary {
-  border-color: var(--button-secondary-border);
+.buttonTopText {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  white-space: nowrap;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
+.buttonBottom {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-@media (max-width: 600px) {
+.buttonArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ff3366;
+  border-radius: 50%;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.buttonMainText {
+  font-size: 28px;
+  font-weight: 900;
+  background: linear-gradient(to bottom, #ff3366 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 1199px) {
   .main {
-    padding: 48px 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 40px;
   }
 
-  .intro {
-    gap: 16px;
+  .freeConsultButton {
+    right: 40px;
+    padding: 16px 24px;
   }
 
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
+  .buttonTopText {
+    font-size: 13px;
+  }
+
+  .buttonArrow {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+  }
+
+  .buttonMainText {
+    font-size: 24px;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+@media (max-width: 767px) {
+  .main {
+    min-height: 70vh;
+    margin-top: -60px;
+    padding-top: 60px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 80px;
+    background-position: center top;
   }
 
-  .page {
-    --background: #000;
-    --foreground: #000;
+  .hero {
+    max-width: 100%;
+  }
 
-    --text-primary: #ededed;
-    --text-secondary: #999;
+  .hero h1 {
+    font-size: clamp(32px, 8vw, 48px);
+    margin-bottom: 16px;
+  }
 
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
+  .hero p {
+    font-size: clamp(16px, 4vw, 20px);
+  }
+
+  .freeConsultButton {
+    right: 50%;
+    transform: translateX(50%);
+    padding: 14px 20px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .freeConsultButton:hover {
+    transform: translateX(50%) translateY(-4px);
+  }
+
+  .buttonContent {
+    gap: 6px;
+  }
+
+  .buttonTopText {
+    font-size: 11px;
+  }
+
+  .buttonArrow {
+    width: 32px;
+    height: 32px;
+    font-size: 22px;
+  }
+
+  .buttonMainText {
+    font-size: 20px;
   }
 }
